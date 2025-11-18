@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rabia'nın Tarih-i Cevdet TEI Ödevi</title>
+    
+    <link rel="stylesheet" href="assets/tei.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <script src="assets/jquery.js"></script>
+    <script src="assets/tei.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // *** Burası Sizin TEI XML dosyanızı (rabia.xml) yükler. ***
+            loadTEI("TEI/rabia.xml", "#tei-container"); 
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        #tei-container {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tarih-i Cevdet TEI Kodlaması (LV 14158 Ödevi)</h1>
+    <p>Bu sayfa, yerel TEI/rabia.xml dosyasından içeriği çekerek görüntülemektedir.</p>
+
+    <div id="tei-container">
+        Yükleniyor...
+    </div>
+    
+</body>
+</html>
